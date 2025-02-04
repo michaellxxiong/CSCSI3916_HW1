@@ -16,7 +16,7 @@ describe('POST /', () => {
             .send(sampleBody)
             .end((err, response) => {
                 expect(err).to.be.null;
-                expect(ressponse).to.be.status(200);
+                expect(response).to.be.status(200);
                 expect(response).to.be.json;
                 expect(response.body).to.have.property('message', "Hello, World!");
                 done();
